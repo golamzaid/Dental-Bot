@@ -1,0 +1,60 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Dental Assistant - Result</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='main.css') }}">
+</head>
+<body>
+  <div class="container">
+    <h2>Dental Assistant Result</h2>
+    <h3>Detected Language: {{ lang }}</h3>
+
+    {% if result %}
+    <div class="result-card">
+      <div class="card-header">
+        <h3>{{ result.names[lang] or result.names['en'] }}</h3>
+        <span class="score">Score: {{ "%.2f"|format(result.score) }}</span>
+      </div>
+
+      {% if result.matched_symptoms %}
+      <p><b>Matched Symptoms:</b> {{ result.matched_symptoms|join(', ') }}</p>
+      {% endif %}
+
+      <ul>
+      {% for a in result.advice %}
+        <li>{{ a }}</li>
+      {% endfor %}
+      </ul>
+
+      <p class="spec">
+        👨‍⚕️ <b>Specialist:</b> {{ result.specialist }} <br>
+        ⚡ <b>Urgency:</b>
+        {% if result.urgency == "urgent" %}
+          <span class="urgent">Immediate</span>
+        {% elif result.urgency == "soon" %}
+          <span class="soon">Visit Soon</span>
+        {% else %}
+          <span class="routine">Routine Check</span>
+        {% endif %}
+      </p>
+    </div>
+    {% else %}
+      <p>No relevant condition found. Try describing your symptoms differently.</p>
+    {% endif %}
+
+    {% if dentists %}
+    <div class="block">
+      <h3>Nearby Dentists</h3>
+      <ul>
+      {% for d in dentists %}
+        <li>{{ d.name }} — {{ "%.2f"|format(d.distance_km) }} km</li>
+      {% endfor %}
+      </ul>
+    </div>
+    {% endif %}
+
+    <a href="/">⬅ Back</a>
+  </div>
+</body>
+</html>

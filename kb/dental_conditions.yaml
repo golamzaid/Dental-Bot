@@ -1,0 +1,82 @@
+conditions:
+- id: dental_caries
+  names:
+    en: Dental Caries (Tooth Decay)
+    hi: दांतों में कीड़ा (कैविटी)
+    bn: দাঁতের ক্ষয় (ক্যাভিটি)
+  symptoms:
+    en: ["Hole/cavity on tooth", "Broken tooth", "Sensitivity to hot/cold/sweets", "Food lodgment", "Tooth pain", "Brown/black spots", "Swelling", "Fever", "Pus discharge"]
+    hi: ["दांत में छेद", "दांत टूटना", "गरम/ठंडे/मीठे पर संवेदनशीलता", "खाना फंसना", "दांत में दर्द", "भूरे/काले धब्बे", "सूजन", "बुखार", "पीप निकलना"]
+    bn: ["দাঁতে গর্ত", "দাঁত ভাঙা", "গরম/ঠান্ডা/মিষ্টিতে সংবেদনশীলতা", "খাবার আটকে যাওয়া", "দাঁতে ব্যথা", "বাদামী/কালো দাগ", "ফুলে যাওয়া", "জ্বর", "পুঁজ বের হওয়া"]
+  description:
+    en: "Decay of tooth due to bacteria and sugars, causing pain, sensitivity, and infection."
+    hi: "बैक्टीरिया और मीठे खाने से दांत खराब होकर दर्द, संवेदनशीलता और संक्रमण होता है।"
+    bn: "ব্যাকটেরিয়া ও চিনি দাঁত ক্ষয় করে ব্যথা, সংবেদনশীলতা ও সংক্রমণ ঘটায়।"
+  advice:
+    en: ["Rinse with warm salt water", "Avoid sweets", "Visit dentist for filling or root canal"]
+    hi: ["गुनगुने नमक पानी से कुल्ला", "मीठा खाने से बचें", "फिलिंग/रूट कैनाल के लिए डेंटिस्ट को दिखाएँ"]
+    bn: ["গরম নুন জল দিয়ে কুলি করুন", "মিষ্টি খাবার এড়িয়ে চলুন", "ফিলিং/রুট ক্যানালের জন্য ডেন্টিস্ট দেখান"]
+  specialist: general_dentist
+  urgency: soon
+
+- id: nursing_bottle_caries
+  names:
+    en: Nursing Bottle Caries
+    hi: नर्सिंग बोतल कैरीज़
+    bn: নার্সিং বোতল ক্ষয়
+  symptoms:
+    en: ["Rapid destruction of baby teeth", "Early loss of milk teeth", "Difficulty eating", "Pain", "Dental abscess", "Delayed permanent teeth eruption"]
+    hi: ["बच्चों के दांत जल्दी खराब होना", "दूध के दांत जल्दी गिरना", "खाने में कठिनाई", "दर्द", "फोड़ा", "स्थायी दांत देर से आना"]
+    bn: ["শিশুর দাঁত দ্রুত নষ্ট হওয়া", "দুধ দাঁত আগে পড়ে যাওয়া", "খাওয়ার অসুবিধা", "ব্যথা", "ফোড়া", "স্থায়ী দাঁত দেরি হওয়া"]
+  description:
+    en: "Seen in bottle-fed babies, rapid destruction of tooth structure due to prolonged milk/sweet exposure."
+    hi: "बोतल से दूध पीने वाले बच्चों में मीठा लंबे समय तक रहने से दांत तेजी से खराब हो जाते हैं।"
+    bn: "বোতল-ফিড শিশুর দাঁত দুধ/মিষ্টি দীর্ঘ সময় থাকার কারণে দ্রুত নষ্ট হয়।"
+  advice:
+    en: ["Do not let baby sleep with milk bottle", "Last feed should be water", "Assist brushing after first tooth erupts"]
+    hi: ["बच्चे को दूध की बोतल लेकर न सुलाएँ", "आखिरी फीड पानी हो", "पहला दांत आने के बाद ब्रश कराएँ"]
+    bn: ["শিশুকে দুধের বোতল নিয়ে ঘুমাতে দেবেন না", "শেষ ফিড হোক জল", "প্রথম দাঁত উঠলে ব্রাশ করাতে হবে"]
+  specialist: pediatric_dentist
+  urgency: routine
+
+- id: gum_disease
+  names:
+    en: Gum Disease (Gingivitis/Periodontitis)
+    hi: मसूड़ों की बीमारी (जिन्जिवाइटिस/पीरियोडोंटाइटिस)
+    bn: মাড়ির রোগ (জিঞ্জিভাইটিস/পেরিওডোন্টাইটিস)
+  symptoms:
+    en: ["Bleeding gums", "Swollen gums", "Bad breath", "Loose teeth", "Gum abscess"]
+    hi: ["मसूड़ों से खून आना", "मसूड़ों में सूजन", "मुंह से बदबू", "दांत हिलना", "मसूड़े में फोड़ा"]
+    bn: ["মাড়ি থেকে রক্ত", "মাড়ি ফুলে যাওয়া", "মুখে দুর্গন্ধ", "দাঁত নড়া", "মাড়ির ফোড়া"]
+  description:
+    en: "Inflammation of gums due to poor oral hygiene and plaque buildup. Can progress to periodontitis causing loose teeth."
+    hi: "खराब मौखिक स्वच्छता और प्लाक जमने से मसूड़ों में सूजन। आगे बढ़कर दांत हिलने लगते हैं।"
+    bn: "খারাপ ওরাল হাইজিন ও প্লাক জমে মাড়ির প্রদাহ হয়। পরে দাঁত নড়ে যায়।"
+  advice:
+    en: ["Brush twice daily", "Rinse mouth with water", "Professional cleaning by dentist"]
+    hi: ["दिन में दो बार ब्रश करें", "मुँह पानी से धोएँ", "डेंटिस्ट से प्रोफेशनल सफाई कराएँ"]
+    bn: ["দিনে দুবার ব্রাশ করুন", "মুখ জল দিয়ে ধুয়ে ফেলুন", "ডেন্টিস্টের কাছে পেশাদার ক্লিনিং করান"]
+  specialist: periodontist
+  urgency: routine
+
+- id: oral_ulcer
+  names:
+    en: Oral Ulcer
+    hi: मुंह के छाले
+    bn: মুখের ঘা
+  symptoms:
+    en: ["Painful sore in mouth", "Burning sensation", "Difficulty eating", "Non-healing ulcer > 2 weeks"]
+    hi: ["मुंह में दर्दनाक घाव", "जलन", "खाने में कठिनाई", "2 हफ्ते से ज्यादा न भरने वाला छाला"]
+    bn: ["মুখে বেদনাদায়ক ঘা", "জ্বালাপোড়া", "খেতে অসুবিধা", "২ সপ্তাহের বেশি না শুকানো ঘা"]
+  description:
+    en: "Small painful lesions in oral mucosa, can be due to trauma, stress, or systemic conditions."
+    hi: "मुंह के अंदर दर्दनाक छोटे छाले, जो चोट, तनाव या अन्य रोगों के कारण हो सकते हैं।"
+    bn: "মুখের ভেতরে ছোট বেদনাদায়ক ঘা, যা আঘাত, মানসিক চাপ বা অন্য অসুখের কারণে হতে পারে।"
+  advice:
+    en: ["Avoid spicy food", "Rinse with salt water", "Consult doctor if persists >2 weeks"]
+    hi: ["मसालेदार भोजन से बचें", "नमक वाले पानी से कुल्ला करें", "2 हफ्ते से ज्यादा रहे तो डॉक्टर से मिलें"]
+    bn: ["ঝাল খাবার এড়িয়ে চলুন", "নুন জল দিয়ে কুলি করুন", "২ সপ্তাহের বেশি থাকলে ডাক্তারের পরামর্শ নিন"]
+  specialist: general_dentist
+  urgency: routine
+
+# More conditions (malocclusion, missing_teeth, oral_cancer_patch, oral_fungal_infection, oral_trauma)...

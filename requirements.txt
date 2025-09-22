@@ -1,0 +1,8 @@
+Flask
+PyYAML
+langdetect
+scikit-learn
+rapidfuzz
+flashtext
+requests
+geopy
