@@ -20,7 +20,7 @@ An AI-powered dental health assistant that understands patient symptoms in multi
 
 Backend: Python, Flask
 
-Frontend: HTML, CSS, Vanilla JS
+Frontend: HTML, CSS
 
 NLP: Custom YAML-based knowledge base
 
